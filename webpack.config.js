@@ -13,7 +13,10 @@ module.exports = {
     },
 
     resolve: {
-        extensions: [".ts", ".tsx", ".js"]
+        extensions: [".ts", ".tsx", ".js", ".json"],
+        alias: {
+            antd: path.resolve(__dirname, "node_modules/antd")
+        }
     },
 
     module: {
@@ -22,6 +25,10 @@ module.exports = {
                 test: /\.tsx?$/,
                 use: "ts-loader",
                 exclude: /node_modules/
+            },
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"]
             }
         ]
     },
