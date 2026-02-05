@@ -45,6 +45,16 @@ module.exports = {
         open: true,
         static: {
             directory: path.resolve(__dirname, "public")
+        },
+        client: {
+            overlay: {
+                runtimeErrors: (error) => {
+                    if (error.message === 'ResizeObserver loop completed with undelivered notifications.') {
+                        return false;
+                    }
+                    return true;
+                }
+            }
         }
     }
 };
