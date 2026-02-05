@@ -6,7 +6,7 @@ import { LoginPage } from './pages/login/ui/LoginPage';
 import { NotFoundPage } from './pages/not-found/ui/NotFoundPage';
 import { UsersPage } from './pages/users/ui/UsersPage';
 
-import 'antd/dist/reset.css'; // or 'antd/dist/antd.css' for older versions, but v5 uses reset.css usually or built-in
+import 'antd/dist/reset.css';
 
 const Root = () => (
     <App>

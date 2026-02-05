@@ -1,4 +1,4 @@
-import { LoginRequest, LoginResponse } from './types';
+import { LoginRequest, LoginResponse } from '../../../shared/api/types';
 
 export const authApi = {
     login: (data: LoginRequest): Promise<LoginResponse> => {

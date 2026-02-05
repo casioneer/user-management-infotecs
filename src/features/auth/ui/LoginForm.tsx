@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form, Input, Button, notification } from 'antd';
 import { useMutation } from '@tanstack/react-query';
-import { authApi } from '../../../shared/api/auth';
+import { authApi } from '../api/authApi';
 import { LoginRequest } from '../../../shared/api/types';
 import { setToken } from '../../../shared/lib/token';
 import { useNavigate } from 'react-router-dom';
