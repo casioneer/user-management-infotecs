@@ -2,6 +2,8 @@
 
 Простое приложение для управления списком пользователей. Сделано в рамках тестового задания.
 
+**Репозиторий:** [https://github.com/casioneer/user-management-infotecs](https://github.com/casioneer/user-management-infotecs)
+
 ## Основной стек
 - React 16 + TypeScript
 - Ant Design 5 (UI) + Styled-components
